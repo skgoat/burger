@@ -1,0 +1,14 @@
+<div class="jumbotron">
+  <h1 class="display-4">EAT DA BURGER</h1>
+  <hr class="my-4">
+</div>
+
+<li>
+	{{name}}
+
+	<button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+		{{#if devoured}}Devoured{{else}}EAT UP!{{/if}}
+	</button>
+
+	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+</li>
